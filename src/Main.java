@@ -1,3 +1,9 @@
+import java.util.List;
+
+import lib.Month;
+import lib.Calendar;
+import lib.Day;
+
 public class Main {
     public static void main(String[] args) {
         // Current year for the calendar
@@ -6,7 +12,8 @@ public class Main {
         // Create a Calendar object
         Calendar calendar = new Calendar(currentYear);
 
-        // Example: Print the months and their corresponding number of days in the current year
+        // Example: Print the months and their corresponding number of days in the
+        // current year
         List<Month> months = calendar.getMonths();
         for (int i = 0; i < months.size(); i++) {
             Month month = months.get(i);
@@ -20,4 +27,3 @@ public class Main {
         }
     }
 }
-
